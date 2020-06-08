@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="/static/commons.css" />
+        <style>
+            body{
+                margin: 0;
+            }
+            .menu{
+                display: block;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        {{suer_dict.k1}}
+        <ul>
+            {% for value in user_dict.values %}
+                <li>{{value}}</li>
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for key in user_dict.keys %}
+                <li>{{key}}</li>
+            {% endfor %}
+        </ul>
+        -->
+        <!--
+        <form action="{{ request.path_info }}" method='POST'>--><!--{% url 'indexx' 2 %}-->
+            <!--<p><input type='text' name='user' placeholder="用户名" /></p>
+            <p><input type='text' name='email' placeholder="邮箱" /></p>
+            <input type='submit' value='提交' />
+        </form>
+        <ul>
+            {% for key,value in user_dict.items %}
+                <li><a href="/detail-{{key}}.html">{{value.name}}</a></li>-->
+                <!--<li><a href="/detail/?nid={{key}}">{{value.name}}</a></li>-->
+            <!--{% endfor %}
+        </ul>-->
+        <div style='height: 48px; background-color: black; color: white'>
+            hello hello
+        </div>
+        <div>
+            <div style="position: absolute; top: 48px; bottom: 0; left: 0; width: 200px; background-color: brown;">
+                <a class='menu' href="/cmdb/user_info/">用户管理</a>
+                <a class='menu' href='/cmdb/user_group/'>用户组管理</a>
+            </div>
+            <div style="position: absolute; top: 48px; left: 210px; bottom: 0; right: 0; overflow: auto">
+
+            </div>
+        </div>
+        <script src="/static/jquery-1.12.4.js"> </script>
+        <script>
+            
+        </script>
+    </body>
+</html>
